@@ -4,10 +4,12 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "playwright test --config=src/playwright.config.ts"
+    "test": "nyc node -r source-map-support/register ./node_modules/@playwright/test/cli.js test --config=src/playwright.config.ts"
   },
   "devDependencies": {
     "@playwright/test": "^1.22.1",
+    "nyc": "^15.1.0",
+    "source-map-support": "^0.5.21",
     "typescript": "^4.6.4"
   },
   "engines": {
