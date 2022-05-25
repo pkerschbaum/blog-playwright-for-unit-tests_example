@@ -16,6 +16,15 @@ function divide(
   return result;
 }
 
+type HeavyCalculationResult = "DONE";
+
+async function doHeavyCalculation(): Promise<HeavyCalculationResult> {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve("DONE"), 1000);
+  });
+}
+
 export const calculator = {
   divide,
+  doHeavyCalculation,
 };
