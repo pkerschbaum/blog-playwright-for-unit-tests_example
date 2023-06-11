@@ -18,4 +18,10 @@ test.describe("calculator", () => {
     const result = await promise;
     expect(result).toEqual("DONE");
   });
+
+  test('divide without "stripFractionalDigits" - snapshot test', () => {
+    expect(calculator.divide(20, 5).toString()).toMatchSnapshot(
+      "divide-without-stripfractionaldigits.txt"
+    );
+  });
 });
