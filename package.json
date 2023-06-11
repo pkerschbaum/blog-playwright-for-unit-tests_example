@@ -4,7 +4,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "nyc node -r source-map-support/register ./node_modules/@playwright/test/cli.js test --config=src/playwright.config.ts"
+    "test": "nyc node -r source-map-support/register ./node_modules/@playwright/test/cli.js test --config=src/playwright.config.ts",
+    "test:watch": "PWTEST_WATCH=1 nyc node -r source-map-support/register ./node_modules/@playwright/test/cli.js test --config=src/playwright.config.ts"
   },
   "devDependencies": {
     "@playwright/test": "^1.35.0",
