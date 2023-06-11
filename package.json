@@ -7,7 +7,7 @@
     "test": "nyc node -r source-map-support/register ./node_modules/@playwright/test/cli.js test --config=src/playwright.config.ts"
   },
   "devDependencies": {
-    "@playwright/test": "^1.22.1",
+    "@playwright/test": "^1.35.0",
     "@types/sinon": "^10.0.11",
     "nyc": "^15.1.0",
     "sinon": "^14.0.0",
